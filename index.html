@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>VELORA</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#080808;color:#f5e6c5;
+ font-family:Arial,sans-serif;padding:24px 18px 90px;
+}
+header{text-align:center;padding:35px 0}
+.logo{font-family:Georgia,serif;font-size:39px;
+ letter-spacing:9px;color:#dfbd76}
+.sub{font-size:10px;letter-spacing:4px;color:#aaa;margin-top:12px}
+.welcome{
+ padding:28px 22px;border:1px solid #816536;
+ border-radius:24px;
+ background:radial-gradient(circle at top right,#49351b,#15110c 65%);
+}
+.small{font-size:11px;color:#d6b56d;letter-spacing:2px}
+h1{font-family:Georgia,serif;font-size:29px;font-weight:400}
+p{color:#aaa;line-height:1.7;font-size:14px}
+button{
+ border:0;border-radius:25px;padding:14px 24px;
+ background:linear-gradient(90deg,#a98137,#f4d99a);
+ color:#171007;font-weight:bold;
+}
+h2{font-family:Georgia,serif;font-weight:400}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.tile{
+ background:linear-gradient(145deg,#211b12,#100e0b);
+ border:1px solid #514126;border-radius:19px;
+ padding:23px 10px;text-align:center;
+}
+.symbol{font-size:27px;color:#e5c477}
+.tile p{margin-bottom:0;font-size:13px;color:#eee}
+nav{
+ position:fixed;bottom:0;left:0;right:0;
+ background:#15120d;border-top:1px solid #66502e;
+ display:flex;justify-content:space-around;
+ padding:17px 3px;color:#d9b86f;font-size:11px;
+}
+nav span{text-align:center}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">VELORA</div>
+ <div class="sub">A NEW WORLD. ONE APP.</div>
+</header>
+
+<section class="welcome">
+ <div class="small">WELCOME TO VELORA</div>
+ <h1>Your World.<br>Your Possibilities.</h1>
+ <p>Discover AI, creativity, entertainment and connections in one extraordinary place.</p>
+ <button onclick="document.getElementById('explore').scrollIntoView({behavior:'smooth'})">Explore Now →</button>
+</section>
+
+<h2 id="explore" style="margin-top:35px">Explore Your World</h2>
+<div class="grid">
+ <div class="tile"><div class="symbol">✧</div><p>Velora AI</p></div>
+ <div class="tile"><div class="symbol">◎</div><p>Social World</p></div>
+ <div class="tile"><div class="symbol">▶</div><p>Entertainment</p></div>
+ <div class="tile"><div class="symbol">✦</div><p>Creative Studio</p></div>
+ <div class="tile"><div class="symbol">⌕</div><p>Discover</p></div>
+ <div class="tile"><div class="symbol">♛</div><p>My Profile</p></div>
+</div>
+
+<nav>
+ <span>⌂<br>Home</span>
+ <span>⌕<br>Search</span>
+ <span>✦<br>VELORA</span>
+ <span>♡<br>Inbox</span>
+ <span>◎<br>Profile</span>
+</nav>
+</body>
+</html>
